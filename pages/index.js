@@ -30,9 +30,9 @@ const Home = () => (
       .hero {
         width: 100%;
         display: flex;
-        min-height: 60vh;
+        min-height: 100vh;
         flex-direction: column;
-        justify-contet: center;
+        justify-content: center;
         align-items: center;
       }
       .title {
