@@ -11,7 +11,7 @@ const Home = () => (
 
 
     <div className='hero'>
-    <img src="/logo.svg" alt="my image" />
+    <img src="/logo.svg" width="90%" alt="my image" />
       <p className='description'>
         Kommer snart...
       </p>
@@ -34,7 +34,6 @@ const Home = () => (
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 1rem;
 
       }
       .title {
