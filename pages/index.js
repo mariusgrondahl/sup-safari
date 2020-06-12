@@ -13,8 +13,9 @@ const Home = () => (
     <div className='hero'>
     <img src="/logo.svg" width="90%" alt="my image" />
       <p className='description'>
-        Kommer snart...
+        Suputleie | Supturer
       </p>
+
 
     </div>
 
@@ -46,7 +47,7 @@ const Home = () => (
       .title,
       .description {
         text-align: center;
-        font-size: 1.4rem
+        font-size: 2rem
       }
       .card {
         padding: 18px 18px 24px;
