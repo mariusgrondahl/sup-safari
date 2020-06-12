@@ -16,6 +16,8 @@ const Home = () => (
         Kommer snart...
       </p>
 
+      
+
     </div>
 
     <style jsx>{`
