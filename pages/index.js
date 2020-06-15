@@ -4,19 +4,32 @@ import Head from 'next/head'
 const Home = () => (
   <div>
     <Head>
-      <title>Sup Safari</title>
+      <title>Sup Safari - Supturer Fredrikstad/Hvaler</title>
+      <meta name="description" content="SUP Safari tilbyr SUP-utleie og SUP-turer i Fredrikstad skjærgården og på Hvaler."/>
+      <meta name="keywords" content="Paddleboard Fredrikstad, SUP Østfold, SUP Hvaler, SUP Rentals, surf, Supbrett Fredrikstad, suputleie, supturer, utleie."/>
+
       <link rel='icon' href='/favicon.ico' />
     </Head>
 
 
 
     <div className='hero'>
-    <img src="/logo.svg" width="90%" alt="my image" />
+    <img className="logo" width="90%" src="/logo.svg"  alt="sup safari logo" />
       <p className='description'>
-        Suputleie | Supturer
+        SUP safari tilbyr utleie av SUP og SUPturer i Fredrikstad og på Hvaler.
+        Vi er i oppstartsfasen og tar gjerne en prat. Legg igjen navn og epost, Vi prekæs!
       </p>
+  <form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Fornavn: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Epost: <input type="email" name="email" /></label>
+  </p>
 
+    <button type="submit">Meld interessse</button>
 
+</form>
     </div>
 
     <style jsx>{`
@@ -27,7 +40,36 @@ const Home = () => (
         Helvetica, sans-serif;
         background: tomato;
         color: white;
+        padding: 1rem;
       }
+
+      button{
+        background: #2d2d2d;
+        outline: none;
+        border-radius: 3px;
+        width: 100%;
+        padding: .5rem;
+        margin: 0 auto;
+        color: #fff;
+        border: none;
+        text-transform: uppercase;
+        font-style: italic;
+      }
+
+      input{
+        border-radius: 3px;
+        width: 100%;
+        padding: .5rem;
+        color: #2d2d2d;
+        margin: .2rem 0rem;
+        outline: none;
+        border: none;
+      }
+
+      .logo img{
+        max-width: 800px
+      }
+
       .hero {
         width: 100%;
         display: flex;
@@ -47,29 +89,8 @@ const Home = () => (
       .title,
       .description {
         text-align: center;
-        font-size: 2rem
-      }
-      .card {
-        padding: 18px 18px 24px;
-        width: 220px;
-        text-align: left;
-        text-decoration: none;
-        color: #434343;
-        border: 1px solid #9b9b9b;
-      }
-      .card:hover {
-        border-color: #067df7;
-      }
-      .card h3 {
-        margin: 0;
-        color: #067df7;
-        font-size: 18px;
-      }
-      .card p {
-        margin: 0;
-        padding: 12px 0 0;
-        font-size: 13px;
-        color: #333;
+        font-size: 1.2rem;
+        line-height: 1.4;
       }
     `}</style>
   </div>
