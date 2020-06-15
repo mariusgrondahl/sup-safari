@@ -14,7 +14,7 @@ const Home = () => (
 
 
     <div className='hero'>
-    <img className="logo" width="90%" src="/logo.svg"  alt="sup safari logo" />
+    <img className="logo" src="/logo.svg"  alt="sup safari logo" />
       <p className='description'>
         SUP safari tilbyr utleie av SUP og SUPturer i Fredrikstad og på Hvaler.
         Vi er i oppstartsfasen og tar gjerne en prat. Legg igjen navn og epost, Vi prekæs!
@@ -67,15 +67,17 @@ const Home = () => (
       }
 
       .logo img{
-        max-width: 800px
+        max-width: 800px;
+        width: 90%;
       }
 
       .hero {
+        margin-top: 10vh;
         width: 100%;
         display: flex;
-        min-height: 100vh;
+        min-height: 60vh;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
 
       }
@@ -91,6 +93,8 @@ const Home = () => (
         text-align: center;
         font-size: 1.2rem;
         line-height: 1.4;
+        max-width: 700px;
+        margin: 3rem 0rem 1rem 0rem;
       }
     `}</style>
   </div>
