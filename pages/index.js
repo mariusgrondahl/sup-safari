@@ -14,8 +14,8 @@ const Home = () => (
       <link rel='icon' href='/favicon.ico' />
     </Head>
 
-    <Fullscreen image="/img/supsafari-hvaler.jpg" height="45vh">
-      <img className="logo" src="/logo.svg"  alt="sup safari logo" />
+    <Fullscreen image="/img/supsafari-hvaler.jpg" height="35vh">
+      <img className="logo" src="/logo-red.svg"  alt="sup safari logo" />
     </Fullscreen>
 
     <div className='hero'>
@@ -39,7 +39,7 @@ const Home = () => (
 
       .logo{
         width: 90%;
-        max-width: 650px;
+        max-width: 550px;
       }
 
 
@@ -50,6 +50,7 @@ const Home = () => (
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        min-height: 30vh;
 
       }
       .title {
