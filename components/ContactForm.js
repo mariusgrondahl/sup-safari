@@ -3,7 +3,7 @@ import React from 'react'
   export default function ContactForm() {
     return(
       <>
-        <form name="interesse"  action="/success" method="POST" data-netlify="true">
+        <form name="interesse"  action="?=sucess" method="POST" data-netlify="true">
         <input type="hidden" name="interesse" value="interesse" />
         <p>
           <label>Navn: <input type="text" name="name" data-netlify="true"/></label>   

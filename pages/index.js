@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import ContactForm from '../components/ContactForm'
+import Fullscreen from '../components/Fullscreen'
+import Footer from '../components/Footer'
 
 const Home = () => (
   <div>
@@ -12,16 +14,18 @@ const Home = () => (
       <link rel='icon' href='/favicon.ico' />
     </Head>
 
-
+    <Fullscreen image="/img/supsafari-hvaler.jpg" height="45vh">
+      <img className="logo" src="/logo.svg"  alt="sup safari logo" />
+    </Fullscreen>
 
     <div className='hero'>
-    <img className="logo" src="/logo.svg"  alt="sup safari logo" />
       <p className='description'>
-        SUP safari tilbyr utleie av SUP og SUPturer i Fredrikstad og på Hvaler.
-        Vi er i oppstartsfasen og tar gjerne en prat. Legg igjen navn og epost, Vi prekæs!
+        Vi tilbyr utleie av SUP og SUPturer i Fredrikstad og på Hvaler.
+        Vi er i oppstartsfasen og tar gjerne en prat. Legg igjen navn og epost. Vi prekæs!
       </p>
       <ContactForm />
     </div>
+    <Footer />
 
     <style jsx>{`
 
@@ -29,9 +33,8 @@ const Home = () => (
         margin: 0;
         font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
         Helvetica, sans-serif;
-        background: tomato;
-        color: white;
-        padding: 1rem;
+        background: #fafafa;
+        color: #2d2d2d;
       }
 
       .logo{
@@ -41,10 +44,9 @@ const Home = () => (
 
 
       .hero {
-        margin-top: 10vh;
+        margin-top: 3rem;
         width: 100%;
         display: flex;
-        min-height: 60vh;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -60,10 +62,10 @@ const Home = () => (
       .title,
       .description {
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         line-height: 1.4;
         max-width: 700px;
-        margin: 3rem 0rem 1rem 0rem;
+        margin: 3rem 1rem 1rem 1rem;
       }
     `}</style>
   </div>
