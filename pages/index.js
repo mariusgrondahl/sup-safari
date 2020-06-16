@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import ContactForm from '../components/ContactForm'
 
 const Home = () => (
   <div>
@@ -19,17 +20,7 @@ const Home = () => (
         SUP safari tilbyr utleie av SUP og SUPturer i Fredrikstad og på Hvaler.
         Vi er i oppstartsfasen og tar gjerne en prat. Legg igjen navn og epost, Vi prekæs!
       </p>
-  <form name="interesse" method="POST" data-netlify="true">
-  <p>
-    <label>Navn: <input type="text" name="name" data-netlify="true"/></label>   
-  </p>
-  <p>
-    <label>Epost: <input type="email" name="email" data-netlify="true"/></label>
-  </p>
-
-    <button type="submit">Meld interessse</button>
-
-</form>
+      <ContactForm />
     </div>
 
     <style jsx>{`
@@ -43,35 +34,11 @@ const Home = () => (
         padding: 1rem;
       }
 
-      button{
-        background: #2d2d2d;
-        outline: none;
-        border-radius: 3px;
-        width: 100%;
-        padding: .5rem;
-        margin: 0 auto;
-        color: #fff;
-        border: none;
-        text-transform: uppercase;
-        font-style: italic;
-      }
-
-      input{
-        border-radius: 3px;
-        width: 100%;
-        padding: .5rem;
-        color: #2d2d2d;
-        margin: .2rem 0rem;
-        outline: none;
-        border: none;
-      }
-
       .logo{
         width: 90%;
+        max-width: 650px;
       }
-      .logo img{
-        max-width: 800px;
-      }
+
 
       .hero {
         margin-top: 10vh;
