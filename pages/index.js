@@ -19,12 +19,12 @@ const Home = () => (
         SUP safari tilbyr utleie av SUP og SUPturer i Fredrikstad og på Hvaler.
         Vi er i oppstartsfasen og tar gjerne en prat. Legg igjen navn og epost, Vi prekæs!
       </p>
-  <form name="contact" method="POST" data-netlify="true">
+  <form name="interesse" method="POST" data-netlify="true">
   <p>
-    <label>Fornavn: <input type="text" name="name" /></label>   
+    <label>Navn: <input type="text" name="name" data-netlify="true"/></label>   
   </p>
   <p>
-    <label>Epost: <input type="email" name="email" /></label>
+    <label>Epost: <input type="email" name="email" data-netlify="true"/></label>
   </p>
 
     <button type="submit">Meld interessse</button>
@@ -66,9 +66,11 @@ const Home = () => (
         border: none;
       }
 
+      .logo{
+        width: 90%;
+      }
       .logo img{
         max-width: 800px;
-        width: 90%;
       }
 
       .hero {
