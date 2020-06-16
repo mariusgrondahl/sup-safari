@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "@emotion/styled";
 
 const FooterWrap = styled.div`
-   background: turquoise;
+   background:tomato;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

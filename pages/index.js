@@ -14,14 +14,14 @@ const Home = () => (
       <link rel='icon' href='/favicon.ico' />
     </Head>
 
-    <Fullscreen image="/img/supsafari-hvaler.jpg" height="35vh">
+    <Fullscreen image="/img/supsafari-hvaler.jpg" height="45vh">
       <img className="logo" src="/logo-red.svg"  alt="sup safari logo" />
     </Fullscreen>
 
     <div className='hero'>
       <p className='description'>
-        Vi tilbyr utleie av SUP og SUPturer i Fredrikstad og på Hvaler.
-        Vi er i oppstartsfasen og tar gjerne en prat. Legg igjen navn og epost. Vi prekæs!
+        Vi tilbyr utleie av SUP til <strong>SUPturer i Fredrikstad og på Hvaler.</strong>
+        Vi er i oppstartsfasen og tar gjerne en prat. Legg igjen navn og epost. Vi prekæs &#128526; 
       </p>
       <ContactForm />
     </div>
@@ -33,7 +33,7 @@ const Home = () => (
         margin: 0;
         font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
         Helvetica, sans-serif;
-        background: #fafafa;
+        background:turquoise;
         color: #2d2d2d;
       }
 
