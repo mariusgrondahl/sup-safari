@@ -9,11 +9,11 @@ import React from 'react'
         <input type="hidden" name="interesse" value="interesse" />
         <p>
           <label>Navn:</label>  
-          <input type="text" name="name" data-netlify="true" placeholder="Raymond Etternavn" required/> 
+          <input type="text" name="name"  placeholder="Raymond Etternavn" required data-netlify="true" /> 
         </p>
         <p>
           <label>Epost:</label>
-          <input type="email" name="email" data-netlify="true" placeholder="dittnavn@eksempel.no" required/>
+          <input type="email" name="email"  placeholder="dittnavn@eksempel.no" required data-netlify="true" />
         </p>
         <p>
         <label>Leie fra: </label>

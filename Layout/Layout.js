@@ -13,13 +13,8 @@ const ContentWrapper = styled.div`
     padding: 0rem 0rem 5rem 0rem;
   }
 `;
+const Layout = ({ children, title = "Sup Safari - Suputleie Fredrikstad og Hvaler" }) => (
 
-function Layout({ children, title = "Sup Safari - Suputleie Fredrikstad og Hvaler" }, props) {
-  useEffect(() => {
-
-  })
-
-  return (
     <html>
     <GlobalCss />
       <body>
@@ -38,6 +33,6 @@ function Layout({ children, title = "Sup Safari - Suputleie Fredrikstad og Hvale
         <Footer />
       </body>
     </html>
-)};
+);
 
 export default Layout;
