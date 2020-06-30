@@ -16,7 +16,7 @@ const Description = styled.div`
 `;
 
 
-function App({ data }) {
+function Sucess() {
 
   return(
   <Layout>
@@ -24,8 +24,6 @@ function App({ data }) {
     <Fullscreen image="/img/supsafari-fredrikstad.jpg"  text="#fff">
     <img className="logo" loading="lazy" width="160px" src="/logo-red.svg"  alt="sup safari logo" />
     <h1><strong>Wohooo!</strong> <span className="emphazize">Vi har motatt din melding</span></h1>
-
-
 
     </Fullscreen>
 
@@ -49,4 +47,4 @@ function App({ data }) {
 
 }
 
-export default App
+export default Sucess

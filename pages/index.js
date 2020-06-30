@@ -16,7 +16,12 @@ const Description = styled.div`
 `;
 
 
-function App({ data }) {
+const addTag = tag => ({
+  type: "ADD_TAG",
+  tag
+});
+
+function App() {
 
   return(
   <Layout>
