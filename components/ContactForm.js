@@ -16,18 +16,8 @@ import React from 'react'
           <input type="email" name="email"  placeholder="dittnavn@eksempel.no" required data-netlify="true" />
         </p>
         <p>
-        <label>Leie fra: </label>
-        <input type="date" name="utleiestart" data-netlify="true"/>
-        </p>
-
-        <p>
-        <label>Leie til: </label>
-        <input type="date" name="utleieslutt" data-netlify="true"/>
-        </p>
-
-        <p>
           <label>Merknader:</label> 
-            <textarea type="textarea" name="text" data-netlify="true">
+            <textarea type="textarea" name="fritekst" data-netlify="true">
           </textarea>
         </p>
       

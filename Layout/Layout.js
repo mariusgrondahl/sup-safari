@@ -14,7 +14,6 @@ const ContentWrapper = styled.div`
   }
 `;
 const Layout = ({ children, title = "Sup Safari - Suputleie Fredrikstad og Hvaler" }) => (
-
     <html>
     <GlobalCss />
       <body>
