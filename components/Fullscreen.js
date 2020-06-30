@@ -14,7 +14,7 @@ const FullscreenWrap = styled.div`
   padding-bottom: 4rem;
   width: 100%;
   box-sizing: border-box;
-  height: 100vh;
+  height: 85vh;
 
   p {
     max-width: 980px;
