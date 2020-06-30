@@ -19,7 +19,7 @@ const Description = styled.div`
 function Sucess() {
 
   return(
-  <Layout>
+  <>
 
     <Fullscreen image="/img/supsafari-fredrikstad.jpg"  text="#fff">
     <img className="logo" loading="lazy" width="160px" src="/logo-red.svg"  alt="sup safari logo" />
@@ -42,7 +42,7 @@ function Sucess() {
 
 
  
-</Layout>
+</>
 )
 
 }
