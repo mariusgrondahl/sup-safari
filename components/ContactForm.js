@@ -20,7 +20,7 @@ import React from 'react'
 
         <p>
         <label>Leie til: </label>
-        <input type="date" name="utleiestart" data-netlify="true"/>
+        <input type="date" name="utleieslutt" data-netlify="true"/>
         </p>
 
         <p>
