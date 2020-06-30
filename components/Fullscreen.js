@@ -16,9 +16,13 @@ const FullscreenWrap = styled.div`
   box-sizing: border-box;
   height: 85vh;
 
+  .emphazize{
+      color: PALETURQUOISE;
+    }
+
   h1{
-        font-size: 4.5rem;
-        line-height: 5rem;
+        font-size: 5.5rem;
+        line-height: 6rem;
         text-align: center;
         margin: 0rem 2rem;
         font-family: 'Barlow', BlinkMacSystemFont, Avenir Next, Avenir;
@@ -26,8 +30,8 @@ const FullscreenWrap = styled.div`
         text-shadow: 1px 1px 1px #000;
 
         @media (min-width: 700px) {
-          font-size: 7rem;
-          line-height: 7rem;
+          font-size: 10rem;
+          line-height: 10rem;
         }
       }
 

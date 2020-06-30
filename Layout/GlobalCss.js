@@ -15,7 +15,7 @@ function GlobalCss(props) {
         font-size: 16px;
         font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
         Helvetica, sans-serif;
-        background: #E9F0EF;
+        background: turquoise;
         color: #2d2d2d;
       }
 
@@ -42,15 +42,15 @@ function GlobalCss(props) {
 
       label{
         color: #2d2d2d;
-        font-weight: normal;
-        font-size: 1.2rem;
+        font-weight: bold;
+        font-size: 1.4rem;
       }
 
       input{
         border-radius: 3px;
         width: 100%;
         max-width: 450px;
-        padding: .5rem;
+        padding: .8rem;
         color: #2d2d2d;
         margin: .2rem 0rem;
         outline: none;

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "@emotion/styled";
 
 const FooterWrap = styled.div`
-  background:turquoise;
+  background: darkturquoise;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -10,16 +10,19 @@ const FooterWrap = styled.div`
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  padding: 6rem 4rem;
+  padding: 4rem 2rem 4rem 2rem;
   margin: 3rem 0 0 0; 
   color: #2d2d2d;
+    p{
+        margin: 0;
+    }
   `
 
 export default function Footer(props){
     return(
         <FooterWrap>
             <footer>
-            <img className="logo" loading="lazy" width="250px" src="/logo.svg"  alt="sup safari logo" />
+            <img className="logo" loading="lazy" width="200px" src="/logo-red.svg"  alt="sup safari logo" />
             <p>Telefon: <strong>+47 41293362</strong></p>
             </footer>
         </FooterWrap>

@@ -26,10 +26,10 @@ function Layout({ children, title = "Sup Safari - Suputleie Fredrikstad og Hvale
         <Head>
           <title>{title}</title>
           <meta name="description" content="SUP Safari tilbyr SUP-utleie og SUP-turer i Fredrikstad skjærgården og på Hvaler."/>
-          <meta name="keywords" content="Paddleboard utleie, SUP Østfold, SUP Hvaler, SUP Utleie, Supbrett Fredrikstad, supturer, leie supbrett."/>
+          <meta name="keywords" content="Paddleboard, Utleie, SUP, Østfold,Hvaler, Fredrikstad , Sarpsborg, turer, safari, leie, paddlebrett, stand up paddle"/>
           <link rel='icon' href='/favicon.ico' />
 
-          <meta property="og:image" content="https://sup-safari.no/img/supsafari.jpg" />
+          <meta property="og:image" content="https://sup-safari.no/img/supsafari-logo.jpg" />
           <meta property="og:image:width" content="1280" />
         </Head>
       
