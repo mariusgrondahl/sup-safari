@@ -15,15 +15,7 @@ const Description = styled.div`
     }
 `;
 
-
-const addTag = tag => ({
-  type: "ADD_TAG",
-  tag
-});
-
-function App() {
-
-  return(
+const App = () => (
   <Layout>
 
     <Fullscreen image="/img/supsafari.jpg"  text="#fff">
@@ -50,6 +42,5 @@ function App() {
 </Layout>
 )
 
-}
 
 export default App
