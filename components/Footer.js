@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "@emotion/styled";
 
 const FooterWrap = styled.div`
-   background:tomato;
+  background:turquoise;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -18,7 +18,7 @@ const FooterWrap = styled.div`
 export default function Footer(props){
     return(
         <FooterWrap>
-            <img className="logo" width="250px" src="/logo.svg"  alt="sup safari logo" />
+            <img className="logo" loading="lazy" width="250px" src="/logo.svg"  alt="sup safari logo" />
             <p>Telefon: <strong>+47 41293362</strong></p>
         </FooterWrap>
 

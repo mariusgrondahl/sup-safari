@@ -4,41 +4,22 @@ import styled from "@emotion/styled";
 const FullscreenWrap = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   text-align: center;
   align-items: center;
   background: url(${props => props.image});
-  background-size: cover;
   background-position: bottom center;
+  background-size: cover;
   color: ${props => props.text};
+  padding-bottom: 4rem;
   width: 100%;
   box-sizing: border-box;
-  height: ${props => props.height};
-  padding: 6rem 4rem;
-
-
-
-  button{
-    max-width: 200px;
-  }
-
-  h1 {
-    text-shadow: 0px 0px 10px rgba(45, 45, 45, 0.3);
-    margin: 0;
-    padding: 0;
-  }
-
-  h2 {
-    font-size: 3.9rem;
-    margin: 0rem;
-    padding: 0rem;
-  }
-  h1 {
-    font-size: 4rem;
-  }
+  height: 60vh;
 
   p {
     max-width: 980px;
+    font-size: 1.2rem;
+    color: #fff;
     /* text-shadow: 0px 0px 10px rgba(45,45,45,0.79); */
   }
 
@@ -60,6 +41,7 @@ const FullscreenWrap = styled.div`
 
   @media only screen and (min-width: 700px) {
     background-position: center center;
+    height: 50vh;
 
     ul {
       display: flex;
@@ -68,9 +50,6 @@ const FullscreenWrap = styled.div`
       }
     }
 
-    h1 {
-      font-size: 5rem;
-    }
   }
 `;
 
