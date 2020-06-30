@@ -16,47 +16,24 @@ const FullscreenWrap = styled.div`
   box-sizing: border-box;
   height: 85vh;
 
-  p {
-    max-width: 980px;
-    font-size: 1.2rem;
-    color: #fff;
-    /* text-shadow: 0px 0px 10px rgba(45,45,45,0.79); */
-  }
+  h1{
+        font-size: 4.5rem;
+        line-height: 5rem;
+        text-align: center;
+        margin: 0rem 2rem;
+        font-family: 'Barlow', BlinkMacSystemFont, Avenir Next, Avenir;
+        color: white;
+        text-shadow: 1px 1px 1px #000;
 
-  a {
-    color: #fff;
-    text-decoration: none;
-    &:active {
-      color: yellow;
-    }
-  }
-
-  ul {
-    padding: 0rem 2rem;
-    font-size: 2rem;
-    line-height: 2.4rem;
-    li {
-    }
-  }
-
-  @media only screen and (min-width: 700px) {
-    background-position: center center;
-    height: 70vh;
-
-    ul {
-      display: flex;
-      li {
-        margin: 2rem;
+        @media (min-width: 700px) {
+          font-size: 7rem;
+          line-height: 7rem;
+        }
       }
-    }
 
-  }
 `;
 
-// setting deafult image
-Fullscreen.defaultProps = {
-  image: "/img/supsafari-hvaler.jpg"
-};
+
 
 function Fullscreen(props) {
   return (

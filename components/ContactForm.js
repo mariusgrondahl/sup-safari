@@ -33,53 +33,6 @@ import React from 'react'
 
       </form>
 
-      <style jsx>{`    
-          label{
-
-            color: #2d2d2d;
-            font-weight: normal;
-            font-size: 1rem;
-          }
-    
-          input{
-            border-radius: 3px;
-            width: 100%;
-            max-width: 450px;
-            padding: .5rem;
-            color: #2d2d2d;
-            margin: .2rem 0rem;
-            outline: none;
-            border: none;
-            box-sizing: border-box;
-          }
-
-          textarea {
-            border-radius: 3px;
-            max-width: 450px;
-            width: 100%;
-            padding: .5rem;
-            color: #2d2d2d;
-            margin: .2rem 0rem;
-            outline: none;
-            border: none;
-            box-sizing: border-box;
-          }
-
-          button{
-            background: #2d2d2d;
-            outline: none;
-            border-radius: 3px;
-            width: 100%;
-            padding: .7rem;
-            margin: 0 auto;
-            color: #fff;
-            border: none;
-            text-transform: uppercase;
-            font-style: italic;
-            box-sizing: border-box;
-          }
-
-        `}</style>
       </>
     )  
     
