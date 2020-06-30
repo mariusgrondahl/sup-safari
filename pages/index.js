@@ -14,7 +14,7 @@ const Home = () => (
       <link rel='icon' href='/favicon.ico' />
     </Head>
 
-    <Fullscreen image="/img/supsafari-hvaler.jpg"  text="#fff">
+    <Fullscreen image="/img/supsafari.jpg"  text="#fff">
     <img className="logo" loading="lazy" width="250px" src="/logo-red.svg"  alt="sup safari logo" />
 
     <h1>SUP-utleie i Fredrikstad og Hvaler</h1>
@@ -31,13 +31,12 @@ const Home = () => (
     <Footer />
 
     <style jsx>{`
-    @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,700&display=swap');
-      :global(body) {
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,700&family=Noto+Sans+JP&display=swap');      :global(body) {
         font-size: 16px;
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
+        font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
         Helvetica, sans-serif;
-        background: AQUAMARINE;
+        background: #E9F0EF;
         color: #2d2d2d;
       }
       

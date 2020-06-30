@@ -14,12 +14,12 @@ import React from 'react'
           <input type="email" name="email" data-netlify="true" placeholder="dittnavn@eksempel.no" required/>
         </p>
         <p>
-        <label>Leie fra:</label>
+        <label>Leie fra: </label>
         <input type="date" name="utleiestart" data-netlify="true"/>
         </p>
 
         <p>
-        <label>Leie til</label>
+        <label>Leie til: </label>
         <input type="date" name="utleiestart" data-netlify="true"/>
         </p>
 
@@ -35,8 +35,9 @@ import React from 'react'
 
       <style jsx>{`    
           label{
+
             color: #2d2d2d;
-            font-weight: bold;
+            font-weight: normal;
             font-size: 1rem;
           }
     

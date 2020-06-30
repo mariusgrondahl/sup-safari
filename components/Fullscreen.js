@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 const FullscreenWrap = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   text-align: center;
   align-items: center;
   background: url(${props => props.image});
@@ -14,7 +14,7 @@ const FullscreenWrap = styled.div`
   padding-bottom: 4rem;
   width: 100%;
   box-sizing: border-box;
-  height: 60vh;
+  height: 100vh;
 
   p {
     max-width: 980px;
@@ -41,7 +41,7 @@ const FullscreenWrap = styled.div`
 
   @media only screen and (min-width: 700px) {
     background-position: center center;
-    height: 50vh;
+    height: 70vh;
 
     ul {
       display: flex;
