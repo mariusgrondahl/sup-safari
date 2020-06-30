@@ -4,7 +4,6 @@ import ContactForm from '../components/ContactForm'
 import CenterWrapper from '../components/CenterWrapper'
 import Fullscreen from '../components/Fullscreen'
 import styled from "@emotion/styled";
-import Link from 'next/link'
 
 const Description = styled.div`
     p{

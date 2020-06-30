@@ -14,9 +14,9 @@ const ContentWrapper = styled.div`
   }
 `;
 const Layout = ({ children, title = "Sup Safari - Suputleie Fredrikstad og Hvaler" }) => (
-    <html>
-    <GlobalCss />
-      <body>
+ 
+    
+      <>
         <Head>
           <title>{title}</title>
           <meta name="description" content="SUP Safari tilbyr SUP-utleie og SUP-turer i Fredrikstad skjærgården og på Hvaler." key="title"/>
@@ -27,7 +27,7 @@ const Layout = ({ children, title = "Sup Safari - Suputleie Fredrikstad og Hvale
           <meta property="og:image:width" content="1280" />
 
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-
+          <GlobalCss />
         </Head>
       
         <NavBar />
@@ -35,8 +35,8 @@ const Layout = ({ children, title = "Sup Safari - Suputleie Fredrikstad og Hvale
           {children}
         </ContentWrapper>
         <Footer />
-      </body>
-    </html>
+      </>
+
 );
 
 export default Layout;
