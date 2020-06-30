@@ -18,8 +18,10 @@ const FooterWrap = styled.div`
 export default function Footer(props){
     return(
         <FooterWrap>
+            <footer>
             <img className="logo" loading="lazy" width="250px" src="/logo.svg"  alt="sup safari logo" />
             <p>Telefon: <strong>+47 41293362</strong></p>
+            </footer>
         </FooterWrap>
 
     )
