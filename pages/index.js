@@ -5,6 +5,7 @@ import CenterWrapper from '../components/CenterWrapper'
 import Fullscreen from '../components/Fullscreen'
 import styled from "@emotion/styled";
 
+
 const Description = styled.div`
     p{
       text-align: center;
@@ -15,15 +16,11 @@ const Description = styled.div`
     }
 `;
 
-const App = () => (
-  <>
-
+const Home = () => (
+<>
     <Fullscreen image="/img/supsafari.jpg"  text="#fff">
     <img className="logo" loading="lazy" width="160px" src="/logo-red.svg"  alt="sup safari logo" />
     <h1><strong>SUP-utleie</strong> <span className="emphazize"> i Fredrikstad og Hvaler</span></h1>
-
-
-
     </Fullscreen>
 
 
@@ -43,4 +40,4 @@ const App = () => (
 )
 
 
-export default App
+export default Home

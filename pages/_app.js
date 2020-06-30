@@ -3,7 +3,7 @@ import App from 'next/app'
 import Layout from "../Layout/Layout";
 
 
-class MyApp extends App {
+class SupSafari extends App {
     render() {
         const { Component, pageProps } = this.props;
     
@@ -15,4 +15,4 @@ class MyApp extends App {
       }
   }
   
-  export default MyApp
+  export default SupSafari
