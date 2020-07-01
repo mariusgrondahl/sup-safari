@@ -1,0 +1,9 @@
+{
+    "name": "Sup Safari",
+    "short_name": "Sup Safari",
+    "theme_color": "#e26551",
+    "background_color": "#02ced1",
+    "display": "browser",
+    "scope": "/",
+    "start_url": "/"
+  }
