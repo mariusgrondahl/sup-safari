@@ -18,7 +18,11 @@ const FullscreenWrap = styled.div`
 
   .emphazize{
       color: PALETURQUOISE;
-    }
+  }
+
+  .yellow{
+      color: yellow;
+  }
 
   h1{
         font-size: 5.5rem;

@@ -20,13 +20,13 @@ const Description = styled.div`
 
 
 
-function Home({router }) {
+function Home() {
 
   return(
 <>
     <Fullscreen image="/img/supsafari.jpg"  text="#fff">
     <img className="logo" loading="lazy" width="160px" src="/logo-red.svg"  alt="sup safari logo" />
-    <h1><strong>SUP-utleie</strong> <span className="emphazize"> i Fredrikstad og Hvaler</span></h1>
+    <h1><span className="yellow">SUP-utleie</span>  i Fredrikstad og Hvaler</h1>
     </Fullscreen>    
       <CenterWrapper>
       <Description>
@@ -45,9 +45,7 @@ function Home({router }) {
   )
 }
 
-Home.getInitialProps = () => {
 
-}
 
 
 export default Home
