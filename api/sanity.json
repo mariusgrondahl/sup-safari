@@ -2,7 +2,7 @@
   "root": true,
   "project": {
     "name": "Sup Safari Content",
-    "basePath": "/"
+    "basePath": "/api"
   },
   "api": {
     "projectId": "xjart3k0",
