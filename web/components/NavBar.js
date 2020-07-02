@@ -12,18 +12,16 @@ const NavbarWrapper = styled.div`
   box-sizing: border-box;
 
   .logo {
-    display: none;
+    display: flex;
     flex-direction: row;
-    justify-content: center;
     text-align: center;
-    align-items: center;
     color: #fff;
-    width: 130px;
-    margin: 1rem 1rem 1rem 2rem;
+    width: 150px;
+    margin: .5rem .5rem .5rem .5rem;
 
     @media (min-width: 700px) {
       display: flex;
-      width: 190px;
+      width: 210px;
       justify-content: left;
     }
   }
@@ -43,7 +41,7 @@ const NavbarWrapper = styled.div`
       display: flex;
       flex-direction: row;
       padding: 0;
-      justify-content: center;
+      justify-content: flex-end;
       margin: 0;
       width: 100%;
 
@@ -58,14 +56,19 @@ const NavbarWrapper = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         font-weight: bold;
 
+        @media (min-width: 700px) {
+          font-size: 1.8rem;
+      }
+
         a {
-          font-weight: light;
+          font-weight: normal;
           color: #fff;
           text-transform: uppercase;
-          letter-spacing: 1.5px;
+          letter-spacing: 1.2px;
+          text-decoration: none;
 
           :hover {
             color: yelow;
@@ -82,16 +85,10 @@ function NavBar() {
       <nav>
         <div className="logo">
           <Link href="/">
-            <img className="logo" loading="lazy" width="120px" src="/logo-red.svg"  alt="sup safari logo" />
+            <img className="logo" loading="lazy" width="120px" src="/logo-transparent-white.svg"  alt="sup safari logo" />
           </Link>
           </div>
           <ul>  
-          <li>
-          <Link href="/">
-          <a>Hjem</a>
-          </Link>
-          </li>
-
           <li>
           <Link href="/blog">
             <a>SUP-blogggen</a>

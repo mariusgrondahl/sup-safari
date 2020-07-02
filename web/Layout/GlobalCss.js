@@ -52,7 +52,6 @@ function GlobalCss(props) {
       input{
         border-radius: 3px;
         width: 100%;
-        max-width: 450px;
         padding: .8rem;
         color: #2d2d2d;
         margin: .2rem 0rem;
@@ -63,7 +62,6 @@ function GlobalCss(props) {
 
       textarea {
         border-radius: 3px;
-        max-width: 450px;
         width: 100%;
         padding: .5rem;
         color: #2d2d2d;

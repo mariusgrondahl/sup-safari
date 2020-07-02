@@ -8,7 +8,7 @@ const FullscreenWrap = styled.div`
   text-align: center;
   align-items: center;
   background: url(${props => props.image});
-  background-position: bottom center;
+  background-position: center center;
   background-size: cover;
   color: ${props => props.text};
   padding-bottom: 0rem;
@@ -25,6 +25,9 @@ const FullscreenWrap = styled.div`
       color: yellow;
   }
 
+  .byline{
+    margin-top: 3rem;
+  }
   h1{
         font-size: 5.5rem;
         line-height: 6rem;

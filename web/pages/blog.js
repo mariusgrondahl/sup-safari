@@ -9,13 +9,22 @@ import client from '../client'
 
 
 
-const Description = styled.div`
+const Blogfront = styled.div`
+
+    h2{
+        padding-bottom: 1rem;
+        border-bottom: 2px solid lightgray;
+        text-align: center;
+    }
     p{
       text-align: center;
       font-size: 1.8rem;
       line-height: 1.6;
       max-width: 700px;
       margin: 3rem 2rem 2rem 2rem;
+    }
+    a:hover{
+        color: turquoise;
     }
 `;
 
@@ -28,6 +37,7 @@ function Blog(props) {
 <Fullscreen image="/img/supsafari-hvaler.jpg"  text="#fff" height="40vh" >
     <h1>SUP-bloggen</h1>
     </Fullscreen> 
+    <Blogfront>
       <CenterWrapper>
       <div>
         {posts.map(
@@ -37,13 +47,14 @@ function Blog(props) {
                 <Link href="/post/[slug]" as={`/post/${slug.current}`}>
                   <h2><a>{title}</a></h2>
                 </Link>{' '}
-                ({new Date(_updatedAt).toDateString()})
+  
               </li>
             )
         )}
       </div>
     
       </CenterWrapper>
+      </Blogfront>
 </>
   )
 }

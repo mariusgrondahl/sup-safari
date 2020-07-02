@@ -30,7 +30,7 @@ export default function Footer(props){
     return(
         <FooterWrap>
             <footer>
-            <img className="logo" loading="lazy" width="200px" src="/logo.svg"  alt="sup safari logo" />
+            <img className="logo" loading="lazy" width="200px" src="/logo-transparent-white.svg"  alt="sup safari logo" />
             <p>Telefon: <strong>+47 41293362</strong></p>
             {/* <p className="tiny">
             Laget med <Link href="https://www.sanity.io/"><a>Sanity.io</a></Link>, <Link href="https://www.netlify.com/"><a>Netlify</a></Link>, og <Link href="https://nextjs.org/"><a>NextJS</a></Link>
