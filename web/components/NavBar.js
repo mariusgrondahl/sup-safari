@@ -6,23 +6,23 @@ const NavbarWrapper = styled.div`
   position: absolute;
   width: 100%;
   z-index: 9;
-  color: #fff;
-  background: transparent;
+  background: tomato;
+  color: #2d2d2d;
   box-sizing: border-box;
 
   .logo {
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 200px;
     color: #fff;
-    margin: 0rem 4rem 1rem 2rem;
+    width: 130px;
+    margin: 1rem 1rem 1rem 2rem;
 
     @media (min-width: 700px) {
       display: flex;
-      width: 300px;
+      width: 190px;
       justify-content: left;
     }
   }
@@ -30,18 +30,13 @@ const NavbarWrapper = styled.div`
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background: transparent;
     box-sizing: border-box;
     width: 100%;
-    padding: 1rem 0rem 0.5rem 0rem;
+    height: 5rem;
+    padding: .5rem .5rem 0.5rem .5rem;
     z-index: 9;
-
-    @media (min-width: 700px) {
-      justify-content: flex-start;
-    }
-
-
 
     ul {
       display: flex;
@@ -56,13 +51,13 @@ const NavbarWrapper = styled.div`
       }
 
       li {
-        min-width: 100px;
         text-align: center;
         margin: 0rem 1rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-size: 1.8rem;
+        align-items: center;
+        font-size: 1.3rem;
         font-weight: bold;
 
         a {
@@ -84,26 +79,25 @@ function NavBar() {
   return (
     <NavbarWrapper>
       <nav>
-         <div className="logo">
+        <div className="logo">
           <Link href="/">
-            <img src="/logo.svg" width="180" />
+            <img className="logo" loading="lazy" width="120px" src="/logo-red.svg"  alt="sup safari logo" />
           </Link>
-
-          <ul>
-            <li>
-          <Link href="/blog">
-          <a>Tips</a>
-          </Link>
-          </li>
-
+          </div>
+          <ul>  
           <li>
           <Link href="/">
           <a>Hjem</a>
           </Link>
           </li>
 
+          <li>
+          <Link href="/blog">
+          <a>Vannblogggen</a>
+          </Link>
+          </li>
+
           </ul>
-        </div> 
       </nav>
     </NavbarWrapper>
   );

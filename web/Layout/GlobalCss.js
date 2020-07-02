@@ -15,7 +15,7 @@ function GlobalCss(props) {
         font-size: 16px;
         font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
         Helvetica, sans-serif;
-        background: turquoise;
+        background: #f1f1f1;
         color: #2d2d2d;
       }
 
@@ -32,7 +32,7 @@ function GlobalCss(props) {
 
       
     a {
-        color: yellow;
+        color: darkturquoise;
     }
 
       
@@ -84,9 +84,6 @@ function GlobalCss(props) {
         box-sizing: border-box;
       }
       
-      a{
-        color: yellow;
-      }
 
       .logo{
         max-width: 550px;

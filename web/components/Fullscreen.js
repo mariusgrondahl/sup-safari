@@ -14,7 +14,8 @@ const FullscreenWrap = styled.div`
   padding-bottom: 4rem;
   width: 100%;
   box-sizing: border-box;
-  height: 85vh;
+  height: ${props => props.height};
+
 
   .emphazize{
       color: PALETURQUOISE;

@@ -25,9 +25,11 @@ function Blog(props) {
   const { posts = [] } = props
   return(
 <>
+<Fullscreen image="/img/supsafari-hvaler.jpg"  text="#fff" height="60vh" >
+    <h1>Vannbloggen</h1>
+    </Fullscreen> 
       <CenterWrapper>
       <div>
-        <h1>Velkommen til bloggen!</h1>
         {posts.map(
           ({ _id, title = '', slug = '', _updatedAt = '' }) =>
             slug && (
