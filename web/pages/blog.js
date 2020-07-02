@@ -1,0 +1,58 @@
+import groq from 'groq'
+import ContactForm from '../components/ContactForm'
+import CenterWrapper from '../components/CenterWrapper'
+import Fullscreen from '../components/Fullscreen'
+import styled from "@emotion/styled";
+import { withRouter } from 'next/router'
+import Link from 'next/link'
+import client from '../client'
+
+
+
+const Description = styled.div`
+    p{
+      text-align: center;
+      font-size: 1.8rem;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 3rem 2rem 2rem 2rem;
+    }
+`;
+
+
+
+function Blog(props) {
+  const { posts = [] } = props
+  return(
+<>
+      <CenterWrapper>
+      <div>
+        <h1>Velkommen til bloggen!</h1>
+        {posts.map(
+          ({ _id, title = '', slug = '', _updatedAt = '' }) =>
+            slug && (
+              <li key={_id}>
+                <Link href="/post/[slug]" as={`/post/${slug.current}`}>
+                  <a>{title}</a>
+                </Link>{' '}
+                ({new Date(_updatedAt).toDateString()})
+              </li>
+            )
+        )}
+      </div>
+    
+      </CenterWrapper>
+</>
+  )
+}
+
+
+Blog.getInitialProps = async () => ({
+  posts: await client.fetch(groq`
+    *[_type == "post" && publishedAt < now()]|order(publishedAt desc)
+  `)
+})
+
+
+
+export default Blog

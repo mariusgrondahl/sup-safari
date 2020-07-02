@@ -84,11 +84,26 @@ function NavBar() {
   return (
     <NavbarWrapper>
       <nav>
-        {/* <div className="logo">
+         <div className="logo">
           <Link href="/">
-            <img src="/logo-red.svg" width="180" />
+            <img src="/logo.svg" width="180" />
           </Link>
-        </div> */}
+
+          <ul>
+            <li>
+          <Link href="/blog">
+          <a>Tips</a>
+          </Link>
+          </li>
+
+          <li>
+          <Link href="/">
+          <a>Hjem</a>
+          </Link>
+          </li>
+
+          </ul>
+        </div> 
       </nav>
     </NavbarWrapper>
   );

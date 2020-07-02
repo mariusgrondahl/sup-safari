@@ -1,12 +1,7 @@
-import React from 'react'
-import Layout from "../Layout/Layout";
 import ContactForm from '../components/ContactForm'
 import CenterWrapper from '../components/CenterWrapper'
 import Fullscreen from '../components/Fullscreen'
 import styled from "@emotion/styled";
-import { withRouter } from 'next/router'
-import Link from 'next/link'
-
 
 const Description = styled.div`
     p{
@@ -20,8 +15,7 @@ const Description = styled.div`
 
 
 
-function Home() {
-
+function Home(props) {
   return(
 <>
     <Fullscreen image="/img/supsafari.jpg"  text="#fff">
@@ -38,9 +32,6 @@ function Home() {
       <ContactForm />
     
       </CenterWrapper>
-
-
- 
 </>
   )
 }
