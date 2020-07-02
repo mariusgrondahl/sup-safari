@@ -25,7 +25,7 @@ function Blog(props) {
   const { posts = [] } = props
   return(
 <>
-<Fullscreen image="/img/supsafari-hvaler.jpg"  text="#fff" height="60vh" >
+<Fullscreen image="/img/supsafari-hvaler.jpg"  text="#fff" height="40vh" >
     <h1>Vannbloggen</h1>
     </Fullscreen> 
       <CenterWrapper>
@@ -35,7 +35,7 @@ function Blog(props) {
             slug && (
               <li key={_id}>
                 <Link href="/post/[slug]" as={`/post/${slug.current}`}>
-                  <a>{title}</a>
+                  <h2><a>{title}</a></h2>
                 </Link>{' '}
                 ({new Date(_updatedAt).toDateString()})
               </li>

@@ -32,9 +32,12 @@ function GlobalCss(props) {
 
       
     a {
+        color: #2d2d2d;
+    }
+    
+    a:hover{
         color: darkturquoise;
     }
-
       
     li {
         list-style: none;

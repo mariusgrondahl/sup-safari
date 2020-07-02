@@ -4,6 +4,7 @@ import Link from "next/link";
 
 const NavbarWrapper = styled.div`
   position: absolute;
+  top: 0;
   width: 100%;
   z-index: 9;
   background: tomato;

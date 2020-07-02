@@ -2,6 +2,10 @@ import groq from 'groq'
 import imageUrlBuilder from '@sanity/image-url'
 import BlockContent from '@sanity/block-content-to-react'
 import client from '../../client'
+import CenterWrapper from '../../components/CenterWrapper'
+import Fullscreen from '../../components/Fullscreen'
+
+
 
 function urlFor (source) {
   return imageUrlBuilder(client).image(source)
@@ -16,8 +20,12 @@ const Post = (props) => {
     body = []
   } = props
   return (
+    <>
+    <Fullscreen image="/img/supsafari.jpg" text="#fff" height="60vh" >
+    <h1>{title}</h1>
+    </Fullscreen> 
+    <CenterWrapper>
     <article>
-      <h1>{title}</h1>
       <span>By {name}</span>
       {categories && (
         <ul>
@@ -40,6 +48,8 @@ const Post = (props) => {
         {...client.config()}
       />
     </article>
+    </CenterWrapper>
+    </>
   )
 }
 
