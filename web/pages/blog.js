@@ -26,7 +26,7 @@ function Blog(props) {
   return(
 <>
 <Fullscreen image="/img/supsafari-hvaler.jpg"  text="#fff" height="40vh" >
-    <h1>Vannbloggen</h1>
+    <h1>SUP-bloggen</h1>
     </Fullscreen> 
       <CenterWrapper>
       <div>

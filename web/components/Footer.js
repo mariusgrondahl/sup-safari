@@ -24,6 +24,7 @@ export default function Footer(props){
             <footer>
             <img className="logo" loading="lazy" width="200px" src="/logo.svg"  alt="sup safari logo" />
             <p>Telefon: <strong>+47 41293362</strong></p>
+            <p>Made with Sanity.io, Netlify and NextJS</p>
             </footer>
         </FooterWrap>
 

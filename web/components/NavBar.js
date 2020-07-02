@@ -94,7 +94,7 @@ function NavBar() {
 
           <li>
           <Link href="/blog">
-          <a>Vannblogggen</a>
+            <a>SUP-blogggen</a>
           </Link>
           </li>
 

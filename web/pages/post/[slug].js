@@ -4,50 +4,43 @@ import BlockContent from '@sanity/block-content-to-react'
 import client from '../../client'
 import CenterWrapper from '../../components/CenterWrapper'
 import Fullscreen from '../../components/Fullscreen'
+import styled from "@emotion/styled";
 
-
+const Article = styled.article`
+  padding: 0rem 2rem;
+`;
 
 function urlFor (source) {
   return imageUrlBuilder(client).image(source)
 }
 
 const Post = (props) => {
+
   const {
     title = 'Missing title',
     name = 'Missing name',
     categories,
     authorImage,
+    mainImage,
     body = []
-  } = props
+  }
+  = props
   return (
     <>
-    <Fullscreen image="/img/supsafari.jpg" text="#fff" height="60vh" >
+    <Fullscreen image={urlFor(mainImage).width().url()} text="#fff" height="60vh" >
     <h1>{title}</h1>
+    <span className="byline">Av: {name}</span>
+
     </Fullscreen> 
     <CenterWrapper>
-    <article>
-      <span>By {name}</span>
-      {categories && (
-        <ul>
-          Posted in
-          {categories.map(category => <li key={category}>{category}</li>)}
-        </ul>
-      )}
-      {authorImage && (
-        <div>
-          <img
-            src={urlFor(authorImage)
-              .width(50)
-              .url()}
-          />
-        </div>
-      )}
+    <Article>
+
       <BlockContent
         blocks={body}
         imageOptions={{ w: 320, h: 240, fit: 'max' }}
         {...client.config()}
       />
-    </article>
+   </Article>
     </CenterWrapper>
     </>
   )
@@ -55,11 +48,15 @@ const Post = (props) => {
 
 const query = groq`*[_type == "post" && slug.current == $slug][0]{
   title,
+  _id,
+  mainImage,
   "name": author->name,
   "categories": categories[]->title,
   "authorImage": author->image,
   body
 }`
+
+console.log(query)
 
 Post.getInitialProps = async function (context) {
   // It's important to default the slug so that it doesn't return "undefined"

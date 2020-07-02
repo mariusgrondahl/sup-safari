@@ -4,14 +4,14 @@ import styled from "@emotion/styled";
 const FullscreenWrap = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   text-align: center;
   align-items: center;
   background: url(${props => props.image});
   background-position: bottom center;
   background-size: cover;
   color: ${props => props.text};
-  padding-bottom: 4rem;
+  padding-bottom: 0rem;
   width: 100%;
   box-sizing: border-box;
   height: ${props => props.height};
