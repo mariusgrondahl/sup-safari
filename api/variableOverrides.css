@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+
+:root {
+  --brand-primary: #ff6347;
+  --brand-secondary: darkturquoise;
+  --font-family-base: 'Barlow';
+}

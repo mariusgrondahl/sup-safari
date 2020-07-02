@@ -2,7 +2,7 @@
   "root": true,
   "project": {
     "name": "Sup Safari Content",
-    "basePath": "/api"
+    "basePath": "/"
   },
   "api": {
     "projectId": "xjart3k0",
@@ -26,6 +26,14 @@
     {
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema"
+    },
+    {
+      "implements": "part:@sanity/base/brand-logo",
+      "path": "components/safariLogo.js"
+    }, 
+    {
+      "implements": "part:@sanity/base/theme/variables/override-style",
+      "path": "variableOverrides.css"
     }
   ]
 }
