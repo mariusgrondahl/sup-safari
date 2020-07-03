@@ -24,11 +24,11 @@
     "/_polyfills": [
       "static/runtime/polyfills.js"
     ],
-    "/index": [
+    "/blog": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/post/[slug]": [
+    "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
