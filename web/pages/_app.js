@@ -1,7 +1,5 @@
-import React from 'react'
 import App from 'next/app'
 import Layout from "../Layout/Layout";
-
 
 class SupSafari extends App {
     render() {

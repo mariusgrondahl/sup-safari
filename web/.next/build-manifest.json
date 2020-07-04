@@ -31,6 +31,10 @@
     "/post/[slug]": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
+    ],
+    "/surfetips": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }

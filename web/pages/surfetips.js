@@ -55,15 +55,14 @@ function SurfeTips(props) {
     <Blogfront>
         {posts.map(
           ({ _id, title = '', slug = '', mainImage = '' }) =>
-            slug && (
-              <Link href={`/post/${slug.current}`} as={`/post/${slug.current}`}>
-                <div key={_id}>
+            slug && (  
+            <li key={_id}>
                 <ArticleCard 
                 bildeURL={urlFor(mainImage.asset._ref).width(1000).url()}
                 title={title}
+                url={slug.current}
                 />  
-              </div>
-              </Link>
+             </li>      
             )
         )}
       </Blogfront>
