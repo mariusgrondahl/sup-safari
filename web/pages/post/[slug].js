@@ -23,12 +23,9 @@ const Post = (props) => {
   const {
     title = 'Missing title',
     name = 'Missing name',
-    categories,
-    authorImage,
     mainImage,
     body = []
-  }
-  = props
+  }= props
   return (
     <>
     <Fullscreen image={urlFor(mainImage).width().url()} text="#fff" height="60vh" >

@@ -69,9 +69,7 @@ function ArticleCard(props) {
         <div className="bottom-card">
             <h1>{props.title} </h1>
             <h3>{props.subtitle}</h3>
-            <Link href={props.url} as={`/post/${props.url}`}>
-                <button>Les mer</button>
-            </Link>
+            <button>Les mer</button>
         </div>
         </Card>
 
