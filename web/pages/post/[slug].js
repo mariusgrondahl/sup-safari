@@ -18,7 +18,7 @@ function urlFor (source) {
   return imageUrlBuilder(client).image(source)
 }
 
-const Post = (props) => {
+const singlePost = (props) => {
 
   const {
     title = 'Mangler tittel',
@@ -57,10 +57,10 @@ const query = groq`*[_type == "post" && slug.current == $slug][0]{
   body
 }`
 
-Post.getInitialProps = async function (context) {
+singlePost.getInitialProps = async function (context) {
   // It's important to default the slug so that it doesn't return "undefined"
   const { slug = "" } = context.query
   return await client.fetch(query, { slug })
 }
 
-export default Post
+export default singlePost
