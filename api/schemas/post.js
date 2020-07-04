@@ -17,6 +17,7 @@ export default {
         maxLength: 96
       }
     },
+      
     {
       name: 'author',
       title: 'Author',
@@ -48,7 +49,7 @@ export default {
       type: 'blockContent'
     }
   ],
-
+  
   preview: {
     select: {
       title: 'title',
@@ -62,4 +63,6 @@ export default {
       })
     }
   }
+
+  
 }
