@@ -19,11 +19,11 @@ function urlFor (source) {
 }
 
 const singlePost = (props) => {
-
   const {
     title = 'Mangler tittel',
     name = 'Ukjent',
     mainImage,
+    slug,
     body = []
   } = props
   return (
