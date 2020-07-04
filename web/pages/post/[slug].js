@@ -8,6 +8,10 @@ import styled from "@emotion/styled";
 
 const Article = styled.article`
   padding: 0rem 2rem;
+
+  img{
+    width: 100%;
+  }
 `;
 
 function urlFor (source) {
@@ -55,8 +59,6 @@ const query = groq`*[_type == "post" && slug.current == $slug][0]{
   "authorImage": author->image,
   body
 }`
-
-console.log(query)
 
 Post.getInitialProps = async function (context) {
   // It's important to default the slug so that it doesn't return "undefined"

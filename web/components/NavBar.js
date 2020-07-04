@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import Link from "next/link";
 
 const NavbarWrapper = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 9;
@@ -90,7 +90,7 @@ function NavBar() {
           </div>
           <ul>  
           <li>
-          <Link href="/blog">
+          <Link href="/surfetips">
             <a>Surfe-tips</a>
           </Link>
           </li>

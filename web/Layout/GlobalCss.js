@@ -72,7 +72,7 @@ function GlobalCss(props) {
       }
 
       button{
-        background: #2d2d2d;
+        background: tomato;
         outline: none;
         border-radius: 3px;
         width: 100%;
