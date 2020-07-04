@@ -13,7 +13,8 @@
     "@sanity/components",
     "@sanity/default-layout",
     "@sanity/default-login",
-    "@sanity/desk-tool"
+    "@sanity/desk-tool",
+    "seo-tools"
   ],
   "env": {
     "development": {
@@ -30,7 +31,7 @@
     {
       "implements": "part:@sanity/base/brand-logo",
       "path": "components/safariLogo.js"
-    }, 
+    },
     {
       "implements": "part:@sanity/base/theme/variables/override-style",
       "path": "variableOverrides.css"
