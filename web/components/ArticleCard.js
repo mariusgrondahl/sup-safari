@@ -1,6 +1,5 @@
 import React from "react";
 import styled from '@emotion/styled';
-import Link from 'next/link';
 
 const Card = styled.div`
     width: 90vw;
@@ -65,21 +64,15 @@ const Label = styled.label `
 `
 
 function ArticleCard(props) {
-    return (
-       
-        <Link href={props.url} as={`/post/${props.url}`}>
-        <a>
-            <Card>
-                <Image bildeURL={props.bildeURL}>
-                </Image>
-                <div className="bottom-card">
-                    <h1>{props.title} </h1>
-                    <h3>{props.subtitle}</h3>
-                </div>
-            </Card>
-        </a>
-        </Link>
-
+    return (    
+        <Card>
+        <Image bildeURL={props.bildeURL}>
+        </Image>
+        <div className="bottom-card">
+            <h1>{props.title} </h1>
+            <h3>{props.subtitle}</h3>
+        </div>
+        </Card>
     );
 }
 

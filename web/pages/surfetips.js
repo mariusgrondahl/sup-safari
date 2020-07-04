@@ -4,6 +4,8 @@ import styled from "@emotion/styled";
 import client from '../client'
 import ArticleCard from '../components/ArticleCard'
 import imageUrlBuilder from '@sanity/image-url'
+import Link from 'next/link';
+
 
 function urlFor (source) {
   return imageUrlBuilder(client).image(source)
@@ -54,13 +56,14 @@ function SurfeTips(props) {
         {posts.map(
           ({ _id, title = '', slug = '', mainImage = '' }) =>
             slug && (
+              <Link href={`/post/${slug.current}`} as={`/post/${slug.current}`}>
                 <div key={_id}>
                 <ArticleCard 
                 bildeURL={urlFor(mainImage.asset._ref).width(1000).url()}
                 title={title}
-                url={slug.current}
                 />  
               </div>
+              </Link>
             )
         )}
       </Blogfront>
