@@ -49,7 +49,6 @@ const Blogfront = styled.div`
 
 function Blog(props) {
   const { posts = [] } = props
-  console.log({posts})
   return(
 <>
 <Fullscreen image="/img/waves.jpg"  text="#fff" height="30vh" >
