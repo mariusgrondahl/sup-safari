@@ -56,7 +56,7 @@ function Blog(props) {
     </Fullscreen> 
     <Blogfront>
         {posts.map(
-          ({ _id, title = '', slug = '', image = '',publishedAt = '', _updatedAt = '', mainImage = '' }) =>
+          ({ _id, title = '', slug = '', mainImage = '' }) =>
             slug && (
                 <div key={_id}>
                 <ArticleCard 
