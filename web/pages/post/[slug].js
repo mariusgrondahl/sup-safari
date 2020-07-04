@@ -21,8 +21,8 @@ function urlFor (source) {
 const Post = (props) => {
 
   const {
-    title = 'Missing title',
-    name = 'Missing name',
+    title = 'Mangler tittel',
+    name = 'Ukjent',
     mainImage,
     body = []
   }= props
