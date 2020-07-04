@@ -14,6 +14,7 @@ const Card = styled.div`
     margin: 1rem;
     pointer: cursor;
     text-align: center;
+    box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.12);
 
     @media (min-width: 900px) {
         max-width: 350px;
@@ -22,7 +23,9 @@ const Card = styled.div`
     h1{
         font-size: 2.5rem;
         margin: 0rem 0rem 0rem 0rem;
-        color: yellow,
+        color: #2d2d2d;
+        padding: 1rem;
+
         
     }
 
@@ -32,7 +35,7 @@ const Card = styled.div`
         font-weight: 300;
     }
 
-    button{
+    a{
         margin-top: 2rem;
     }
 
@@ -51,6 +54,8 @@ const Image = styled.div`
     padding: 0;
     width: 100%;
     height: 25vh;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 `
 
 const Label = styled.label `
@@ -69,7 +74,6 @@ function ArticleCard(props) {
         <div className="bottom-card">
             <h1>{props.title} </h1>
             <h3>{props.subtitle}</h3>
-            <button>Les mer</button>
         </div>
         </Card>
 

@@ -1,10 +1,6 @@
 import groq from 'groq'
-import ContactForm from '../components/ContactForm'
-import CenterWrapper from '../components/CenterWrapper'
 import Fullscreen from '../components/Fullscreen'
 import styled from "@emotion/styled";
-import { withRouter } from 'next/router'
-import Link from 'next/link'
 import client from '../client'
 import ArticleCard from '../components/ArticleCard'
 import imageUrlBuilder from '@sanity/image-url'
@@ -47,11 +43,11 @@ const Blogfront = styled.div`
 
 
 
-function Blog(props) {
+function SurfeTips(props) {
   const { posts = [] } = props
   return(
 <>
-<Fullscreen image="/img/waves.jpg"  text="#fff" height="30vh" >
+<Fullscreen image="/img/waves.jpg"  height="30vh" >
     <h1>Surfe-tips</h1>
     </Fullscreen> 
     <Blogfront>
@@ -65,17 +61,17 @@ function Blog(props) {
                 url={slug.current}
                 />  
               </div>
-
-              
             )
         )}
       </Blogfront>
 </>
   )
+
+
 }
 
 
-Blog.getInitialProps = async () => ({
+SurfeTips.getInitialProps = async () => ({
   posts: await client.fetch(groq`
     *[_type == "post" && publishedAt < now()]|order(publishedAt desc)
   `)
@@ -83,4 +79,4 @@ Blog.getInitialProps = async () => ({
 
 
 
-export default Blog
+export default SurfeTips

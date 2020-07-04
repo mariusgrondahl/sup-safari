@@ -23,7 +23,6 @@ const singlePost = (props) => {
     title = 'Mangler tittel',
     name = 'Ukjent',
     mainImage,
-    slug,
     body = []
   } = props
   return (
