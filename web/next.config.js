@@ -8,8 +8,7 @@ module.exports = (phase, { defaultConfig }) => {
   }
 
   return {
-    ...
-    distDir: "_next",
+      distDir: "_next",
     generateBuildId: async () => {
       if (process.env.BUILD_ID) {
         return process.env.BUILD_ID;
@@ -17,6 +16,6 @@ module.exports = (phase, { defaultConfig }) => {
         return `${new Date().getTime()}`;
       }
     },
-    ...
+
   }
 }
