@@ -66,17 +66,18 @@ const Label = styled.label `
 
 function ArticleCard(props) {
     return (
-    
+       
         <Link href={props.url} as={`/post/${props.url}`}>
-        <Card>
-        <Image bildeURL={props.bildeURL}>
-        </Image>
-        <div className="bottom-card">
-            <h1>{props.title} </h1>
-            <h3>{props.subtitle}</h3>
-        </div>
-        </Card>
-
+        <a>
+            <Card>
+                <Image bildeURL={props.bildeURL}>
+                </Image>
+                <div className="bottom-card">
+                    <h1>{props.title} </h1>
+                    <h3>{props.subtitle}</h3>
+                </div>
+            </Card>
+        </a>
         </Link>
 
     );
