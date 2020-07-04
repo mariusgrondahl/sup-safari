@@ -7,7 +7,7 @@ const FullscreenWrap = styled.div`
   justify-content: center;
   text-align: center;
   align-items: center;
-  background: url(${props => props.image});
+  background:  #2d2d2d url(${props => props.image});
   background-position: center center;
   background-size: cover;
   color: ${props => props.text};
