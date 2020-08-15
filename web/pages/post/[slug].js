@@ -49,6 +49,7 @@ const singlePost = (props) => {
 const query = groq`*[_type == "post" && slug.current == $slug][0]{
   title,
   _id,
+  slug,
   mainImage,
   "name": author->name,
   "categories": categories[]->title,
@@ -58,7 +59,7 @@ const query = groq`*[_type == "post" && slug.current == $slug][0]{
 
 singlePost.getInitialProps = async function (context) {
   // It's important to default the slug so that it doesn't return "undefined"
-  const { slug = "test" } = context.query
+  const { slug = "safari" } = context.query
   return await client.fetch(query, { slug })
 }
 

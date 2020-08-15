@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 
 const Style = styled.div`
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 650px;
   padding: 3rem 1rem 1rem 1rem;
   display: flex;
   align-items: center;

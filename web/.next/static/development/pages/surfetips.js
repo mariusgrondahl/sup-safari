@@ -1836,7 +1836,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(f
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!******************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fsurfetips&absolutePagePath=%2FUsers%2Fmariusgrondahl%2FDocuments%2FGitHub%2Fsup-safari%2Fweb%2Fpages%2Fsurfetips.js ***!
   \******************************************************************************************************************************************************************/
@@ -1859,4 +1859,4 @@ eval("module.exports = dll_ec7d9c0249b2ef52b74c;//# sourceURL=[module]\n//# sour
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
