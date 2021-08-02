@@ -14,7 +14,7 @@ function urlFor (source) {
 const Blogfront = styled.div`
   margin: 0 auto;
   max-width: 1280px;
-  padding: 3rem 1rem 1rem 1rem;
+  padding: 5rem 1rem 1rem 1rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -22,7 +22,7 @@ const Blogfront = styled.div`
 
   @media (min-width: 900px) {
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
         }
@@ -49,9 +49,6 @@ function SurfeTips(props) {
   const { posts = [] } = props
   return(
 <>
-<Fullscreen image="/img/waves.jpg"  height="30vh" >
-    <h1>Surfe-tips</h1>
-    </Fullscreen> 
     <Blogfront>
         {posts.map(
           ({ _id, title = '', slug = '', mainImage = '' }) =>

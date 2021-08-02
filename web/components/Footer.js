@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import Link from "next/link";
 
 const FooterWrap = styled.div`
   background: darkturquoise;
@@ -10,7 +11,7 @@ const FooterWrap = styled.div`
   box-sizing: border-box;
   width: 100%;
   padding: 4rem 2rem 4rem 2rem;
-  margin: 3rem 0 0 0; 
+  margin: 0rem 0 0 0; 
   color: #fff;
 
     a{
@@ -31,7 +32,10 @@ export default function Footer(props){
         <FooterWrap>
             <footer>
             <img className="logo" loading="lazy" width="200px" src="/logo-transparent-white.svg"  alt="sup safari logo" />
-            <p>Telefon: <strong>+47 41293362</strong></p>
+            <p>&#x1F4DE;  <strong>+47 41293362</strong></p>
+            <p>&#x1F4EB;  <strong>Epost kommer</strong></p>
+            
+
             {/* <p className="tiny">
             Laget med <Link href="https://www.sanity.io/"><a>Sanity.io</a></Link>, <Link href="https://www.netlify.com/"><a>Netlify</a></Link>, og <Link href="https://nextjs.org/"><a>NextJS</a></Link>
             </p> */}
