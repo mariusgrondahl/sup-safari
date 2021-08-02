@@ -28,7 +28,7 @@ function Home(props) {
       Vi tilbyr utleie av SUPbrett til <strong>paddleturer i Fredrikstad og Hvaler-regionen.</strong> Vi tar gjerne en prat. Legg igjen navn, epost og når du ønsker å leie. Vi prekæs &#128526; &#129305; &#x1F3C4; 
       </p>
 
-      <h4>Vi har for tiden ingen ledige SUP-brett</h4>
+      <p>Vi har for tiden ingen ledige SUP-brett</p>
       </Description>
     
       </CenterWrapper>
