@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 const Style = styled.div`
   margin: 0 auto;
   max-width: 650px;
-  padding: 3rem 1rem 1rem 1rem;
+  padding: 2rem 1rem 1rem 1rem;
   display: flex;
   align-items: center;
   flex-direction: column;

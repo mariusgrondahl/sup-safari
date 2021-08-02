@@ -11,7 +11,8 @@ const FullscreenWrap = styled.div`
   background-position: center center;
   background-size: cover;
   color: ${props => props.text};
-  padding-bottom: 0rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
   width: 100%;
   box-sizing: border-box;
   height: ${props => props.height};

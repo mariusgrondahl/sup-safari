@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import Link from "next/link";
 
 const NavbarWrapper = styled.div`
-  position: absolute;
+  position: relative;
   top: 0;
   width: 100%;
   z-index: 9;
@@ -66,9 +66,9 @@ const NavbarWrapper = styled.div`
         a {
           font-weight: normal;
           color: #fff;
-          text-transform: uppercase;
+          font-weight: bold;
           letter-spacing: 1.2px;
-          text-decoration: none;
+          text-decoration: underline;
 
           :hover {
             color: yelow;
@@ -82,16 +82,23 @@ const NavbarWrapper = styled.div`
 function NavBar() {
   return (
     <NavbarWrapper>
+
       <nav>
         <div className="logo">
           <Link href="/">
             <img className="logo" loading="lazy" width="120px" src="/logo-transparent-white.svg"  alt="sup safari logo" />
           </Link>
-          </div>
+        </div>
           <ul>  
           <li>
           <Link href="/surfetips">
-            <a>Surfe-tips</a>
+            <a>Tips</a>
+          </Link>
+          </li>
+
+          <li>
+          <Link href="/surfesjappa">
+            <a>Sjappa</a>
           </Link>
           </li>
 
